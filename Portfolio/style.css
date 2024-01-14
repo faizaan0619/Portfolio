@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  padding: 12px 120px;
+  height: 32px;
+  width: 1200px;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  position: absolute;
+  z-index: 2;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  padding: 0px 16px;
+  /* background-color: #fdc435; */
+  transition: transform 0.3s cubic-bezier(0.19, 0.69, 0.39, 0.89);
+}
+ul li a {
+  text-decoration: none;
+  color: black;
+}
+ul li :hover {
+  /* color: #fdc435; */
+  transform: translateY(-10px);
+}
+.parent-left {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  left: 115px;
+  top: 105px;
+  width: 35vw;
+}
+.head {
+  color: orange;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+}
+.intro {
+  font-size: 64px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+}
+.about {
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+}
+.buttons {
+  display: flex;
+  padding-top: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+.buttons .pro {
+  margin: 0 12px;
+  background-color: #fdc435;
+  padding: 8px 24px;
+  border: 1px yellow;
+  border-radius: 8px;
+}
+
+.buttons .link {
+  margin: 0 12px;
+  border-radius: 8px;
+  padding: 8px 24px;
+  border: 2px solid #25282b;
+}
+.buttons a {
+  color: black;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+.box {
+  display: flex;
+  margin-left: 786px;
+  position: absolute;
+  z-index: 1;
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+a {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.19, 0.69, 0.39, 0.89);
+}
+a:hover {
+  transform: translateY(-5px);
+}
+.container {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 243px 226px 326px 157px;
+  padding-top: 100px;
+}
+.projectheader {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80vw;
+  gap: 0px;
+}
+.container > h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  width: 80vw;
+}
+.reactangle {
+  width: 100px;
+  height: 4px;
+  border-radius: 2px;
+  background: #fdc435;
+}
+/* Project 1 starts here */
+.project1,
+.project3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(188, 221, 249);
+  width: 600px;
+  height: 360px;
+  margin-top: 100px;
+  margin-left: 10px;
+  border-radius: 30px;
+}
+.project1-image {
+  display: flex;
+  width: 600px;
+  height: 360px;
+  background: url(project1-image.png);
+  background-position: center;
+  align-self: flex-end;
+  justify-self: flex-start;
+  flex-direction: column;
+  margin-right: initial;
+  position: absolute;
+  top: 167.5%;
+  left: 71%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+}
+h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+}
+.infobox1,
+.infobox3 {
+  display: flex;
+  width: 496px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+.view-project {
+  display: flex;
+  padding: 8px 24px;
+  align-items: flex-start;
+  border-radius: 24px;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  background-color: #ffd467;
+  font-weight: 600;
+  cursor: pointer;
+}
+/* Project 1 ends here */
+.project2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(188, 221, 249);
+  width: 600px;
+  height: 360px;
+  margin-top: 100px;
+  margin-left: 621px;
+  border-radius: 30px;
+}
+.infobox2 {
+  display: flex;
+  width: 496px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+.project2-image {
+  display: flex;
+  width: 600px;
+  height: 360px;
+  background: url(project1-image.png);
+  background-position: center;
+  align-self: flex-end;
+  justify-self: flex-start;
+  flex-direction: column;
+  margin-right: initial;
+  position: absolute;
+  top: 239%;
+  left: 31%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+}
+.project3-image {
+  display: flex;
+  width: 600px;
+  height: 360px;
+  background: url(project1-image.png);
+  background-position: center;
+  align-self: flex-end;
+  justify-self: flex-start;
+  flex-direction: column;
+  margin-right: initial;
+  position: absolute;
+  top: 311%;
+  left: 71%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+}
+/* about section */
+.aboutmain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+.about-box {
+  display: flex;
+  width: 588px;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: flex-start;
+  gap: 32px;
+  /* margin-left: 80px; */
+  font-size: 30px;
+}
+.about-box > h2 {
+  font-size: 40px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  align-items: center;
+  width: 253px;
+}
+.para {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  align-items: center;
+  margin: 0px 30px;
+}
+.resume {
+  margin: 0 26px;
+  background-color: #fdc435;
+  padding: 8px 24px;
+  border: 1px yellow;
+  border-radius: 8px;
+}
+.image {
+  height: 524px;
+  width: 524px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  border: 2px solid #25282b;
+  border-radius: 600px;
+  background-image: url(myphoto.jpg);
+  background-position-x: 950px;
+  background-position-y: 1200px;
+  /* margin-top: 20px; 
+  margin-left: 50px;  */
+}
+.last {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+/* .footer {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-left: 654px;
+} */
+h5 {
+  margin-left: 690px;
+  font-family: "Inter", sans-serif;
+}
